@@ -1,0 +1,188 @@
+<!DOCTYPE HTML>
+<html>
+
+<head>
+    <title></title>
+    <script src="script.js"></script>
+    <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Fira+Code:wght@300;600&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <meta name="viewport" content="width=device-width,height=device-height,initial-scale=1.0" />
+</head>
+
+<body onload='onbodyload()'>
+    <div id=navbar>
+        <ul>
+            <li><a href="default.asp">home</a></li>
+            <li><a href="news.asp">new</a></li>
+            <li><a href="contact.asp">contact</a></li>
+            <li><a href="about.asp">about</a></li>
+        </ul>
+    </div>
+    <br>
+    <div id="mainPage">
+        <h1></h1><br>
+        <!-- this is the releaseBlock, it will hold the information for each ep/lp,\
+        this releaseBlock class can be repeated as many times as i want. i will\
+		ofcourse change the information around for each track.-->
+	    <div class="releaseBlockContainer">
+			<img src="images/heart.png" class="heart"></img>
+	        <div class="releaseBlock">
+	            <div class="releasePic">
+	                <img src="https://i.discogs.com/dOUrGtLgVNuAf0ujNxxaXTf0B54gfDe4lJKsQuu19sw/rs:fit/g:sm/q:90/h:465/w:465/czM6Ly9kaXNjb2dz/LWRhdGFiYXNlLWlt/YWdlcy9SLTEyMjMx/OC0xMzc5MjQ1OTc3/LTk3MTIuanBlZw.jpeg" width="200px" height="200px">
+	            </div>
+	            <div class="vl"></div>
+	            <hr>
+	            <a href="https://www.discogs.com/master/198146-KMA-Productions-Phantasy-Trip-Cape-Fear" class="releaseHeading">KMA Productions – Phantasy Trip / Cape Fear</a>
+	            <a href="https://www.discogs.com/label/8303-Urban-Beat" class="releaseLabel">Urban Beat</a>
+	            <hr>
+	            <p>record is older than me ... but I like this one, phantasy trip with a old speed garage vibe as the flip side has "cape fear" with a more deep house like sound.</p>
+	            <img src="images/heart.png" onclick="switchIcon(this)" id="heartIcon"></img>
+	            <a href="capefear.html" class="readMore">read more</a>
+	    </div>
+	    <!--end of release block-->
+	    <div class="releaseBlockContainer">
+			<img src="images/heart.png" class="heart"></img>
+	        <div class="releaseBlock">
+	            <div class="releasePic">
+	                <img src="images/saolforsa.jpeg" width="200px" height="200px">
+	            </div>
+	            <div class="vl"></div>
+	            <hr>
+	            <a href="https://www.discogs.com/release/23189111-Various-Saol-F%C3%B3rsa-EP" class="releaseHeading">Various – Saol Fórsa EP</a>
+	            <a href="https://www.discogs.com/label/1564188-Delinquent-Delivery" class="releaseLabel">Delinquent Delivery</a>
+	            <hr>
+	            <p>one of my favourite irish releases this year, deliquent delivery is a label with some very good stuff from the irish techno scene in recent years. featuring on this extended play, jon hussey who is no stanger to the dublin scene, stuey lyons,
+	                james cherry, stephen mahoney and snakebite_616.</p>
+	            <img src="images/heart.png" onclick="switchIcon(this)" id="heartIcon"></img>
+	            <a href="saolforsa.html" class="readMore">read more</a>
+	    </div>
+	    <!--end of release block-->
+	    <div class="releaseBlockContainer">
+			<img src="images/heart.png" class="heart"></img>
+	        <div class="releaseBlock">
+	            <div class="releasePic">
+	                <img src="https://i.discogs.com/f_pGkC6XJ8lDpAFfQLn9rCTsm-3A2iDvB5D7Zyrnh0s/rs:fit/g:sm/q:90/h:600/w:599/czM6Ly9kaXNjb2dz/LWRhdGFiYXNlLWlt/YWdlcy9SLTg3NTM4/OTAtMTU0MTI2ODcy/NS01MzIxLmpwZWc.jpeg" width="200px" height="200px">
+	            </div>
+	            <div class="vl"></div>
+	            <hr>
+	            <a href="https://www.discogs.com/release/8753890-Maurizio-M4" class="releaseHeading">Maurizio – M4</a>
+	            <a href="https://www.discogs.com/label/254-Maurizio" class="releaseLabel">Maurizio</a>
+	            <hr>
+	            <p>from the works of the famous basic channel duo. this record is timeless and is an essential dub / minimal techno piece.</p>
+	            <img src="images/heart.png" onclick="switchIcon(this)" id="heartIcon"></img>
+	            <a href="m4.html" class="readMore">read more</a>
+	    </div>
+	    <!--end of release block-->
+	    <div class="releaseBlockContainer">
+			<img src="images/heart.png" class="heart"></img>
+	        <div class="releaseBlock">
+	            <div class="releasePic">
+	                <img src="https://i.discogs.com/ozZLiClD1NNsyyDK6B37xk0Ld1UOUDTiO30T9_68O74/rs:fit/g:sm/q:90/h:600/w:600/czM6Ly9kaXNjb2dz/LWRhdGFiYXNlLWlt/YWdlcy9SLTIyMDM1/NTE3LTE2NDQwNzA2/ODAtNTE1NC5wbmc.jpeg" width="200px" height="200px">
+	            </div>
+	            <div class="vl"></div>
+	            <hr>
+	            <a href="https://www.discogs.com/release/22035517-Perception-BLUFF007" class="releaseHeading">Perception* - BLUFF007</a>
+	            <a href="https://www.discogs.com/label/1714695-Bluff-Records-4" class="releaseLabel">Bluff Records</a>
+	            <hr>
+	            <p>dj perception on bluff, great record, have to say ride it is definitely my favourite tune on this 12", and has me excited for his release on timehri later this year.</p>
+	            <img src="images/heart.png" onclick="switchIcon(this)" id="heartIcon"></img>
+	            <a href="saolforsa.html" class="readMore">read more</a>
+	    </div>
+	    <!--end of release block-->
+	    <div class="releaseBlockContainer">
+			<img src="images/heart.png" class="heart"></img>
+	        <div class="releaseBlock">
+	            <div class="releasePic">
+	                <img src="https://i.discogs.com/OaEPRlZ_B7I22qjZ6D2u2F4dkoi3n4ii1F1rdwj65fE/rs:fit/g:sm/q:90/h:600/w:600/czM6Ly9kaXNjb2dz/LWRhdGFiYXNlLWlt/YWdlcy9SLTU4ODk3/MDktMTQwOTQ4ODM2/OS05MzA5LmpwZWc.jpeg" width="200px" height="200px">
+	            </div>
+	            <div class="vl"></div>
+	            <hr>
+	            <a href="https://www.discogs.com/release/5889709-DVS1-Klockworks-13" class="releaseHeading">DVS1 – Klockworks 13</a>
+	            <a href="https://www.discogs.com/label/78794-Klockworks" class="releaseLabel">Klockworks</a>
+	            <hr>
+	            <p>with a thorough education and background in techno dvs1 has ofcourse made it on to this list. hypnotic side of stuff that I love this record will always be spun.</p>
+	            <img src="images/heart.png" onclick="switchIcon(this)" id="heartIcon"></img>
+	            <a href="saolforsa.html" class="readMore">read more</a>
+	    </div>
+	    <!--end of release block-->
+	    <div class="releaseBlockContainer">
+			<img src="images/heart.png" class="heart"></img>
+	        <div class="releaseBlock">
+	            <div class="releasePic">
+	                <img src="https://i.discogs.com/weEWzn4KMe1h5LzxpzmrYcaH1wp6DeTzVbH6OSf1SOQ/rs:fit/g:sm/q:90/h:600/w:600/czM6Ly9kaXNjb2dz/LWRhdGFiYXNlLWlt/YWdlcy9SLTI0NDk5/OTU4LTE2NjQzNjM2/NTktNTIyMy5qcGVn.jpeg" width="200px" height="200px">
+	            </div>
+	            <div class="vl"></div>
+	            <hr>
+	            <a href="https://www.discogs.com/release/24499958-Kaiser-14-x-Matrixxman-Strapped" class="releaseHeading">Kaiser x Matrixxman – Strapped</a>
+	            <a href="https://www.discogs.com/label/2132365-K-S-R" class="releaseLabel">K S R – KSR009</a>
+	            <hr>
+	            <p>fast paced, loopy, lots of energy in this one from kaiser and matrixmann, on kaisers own label KSR. tip: worth the buy.</p>
+	            <img src="images/heart.png" onclick="switchIcon(this)" id="heartIcon"></img>
+	            <a href="saolforsa.html" class="readMore">read more</a>
+	    </div>
+	    <!--end of release block-->
+	    <div class="releaseBlockContainer">
+			<img src="images/heart.png" class="heart"></img>
+	        <div class="releaseBlock">
+	            <div class="releasePic">
+	                <img src="https://i.discogs.com/F01qMo3UX9uNZprCNTcoaV82qLTs8puMnLO8JUxYY6I/rs:fit/g:sm/q:90/h:240/w:240/czM6Ly9kaXNjb2dz/LWRhdGFiYXNlLWlt/YWdlcy9SLTIxNjk1/OTgzLTE2NDE5MjEx/NjktMTcwNy5qcGVn.jpeg" width="200px" height="200px">
+	            </div>
+	            <div class="vl"></div>
+	            <hr>
+	            <a href="https://www.discogs.com/release/21695983-DJ-Chich-X-010110" class="releaseHeading">DJ Chich – X-010110</a>
+	            <a href="https://www.discogs.com/label/648222-Modulhertz" class="releaseLabel">Modulhertz</a>
+	            <hr>
+	            <p>with remixes from the man who created the famous mord label, bas mooy, and the 2 brothers who are taking over techno right now, temudo and norbak hayes, both from portugal, this is golden.</p>
+	            <img src="images/heart.png" onclick="switchIcon(this)" id="heartIcon"></img>
+	            <a href="saolforsa.html" class="readMore">read more</a>
+	    </div>
+	    <!--end of release block-->
+	    <div class="releaseBlockContainer">
+			<img src="images/heart.png" class="heart"></img>
+	        <div class="releaseBlock">
+	            <div class="releasePic">
+	                <img src="images/saolforsa.jpeg" width="200px" height="200px">
+	            </div>
+	            <div class="vl"></div>
+	            <hr>
+	            <a href="https://www.discogs.com/release/23189111-Various-Saol-F%C3%B3rsa-EP" class="releaseHeading">Various – Saol Fórsa EP</a>
+	            <a href="https://www.discogs.com/label/1564188-Delinquent-Delivery" class="releaseLabel">Delinquent Delivery</a>
+	            <hr>
+	            <p>one of my favourite irish releases this year, deliquent delivery is a label with some very good stuff from the irish techno scene in recent years. featuring on this extended play, jon hussey who is no stanger to the dublin scene, stuey lyons,
+	                james cherry, stephen mahoney and snakebite_616.</p>
+	            <img src="images/heart.png" onclick="switchIcon(this)" id="heartIcon"></img>
+	            <a href="saolforsa.html" class="readMore">read more</a>
+	    </div>
+	    <!--end of release block-->
+	    <div class="releaseBlockContainer">
+			<img src="images/heart.png" class="heart"></img>
+	        <div class="releaseBlock">
+	            <div class="releasePic">
+	                <img src="images/saolforsa.jpeg" width="200px" height="200px">
+	            </div>
+	            <div class="vl"></div>
+	            <hr>
+	            <a href="https://www.discogs.com/release/23189111-Various-Saol-F%C3%B3rsa-EP" class="releaseHeading">Various – Saol Fórsa EP</a>
+	            <a href="https://www.discogs.com/label/1564188-Delinquent-Delivery" class="releaseLabel">Delinquent Delivery</a>
+	            <hr>
+	            <p>one of my favourite irish releases this year, deliquent delivery is a label with some very good stuff from the irish techno scene in recent years. featuring on this extended play, jon hussey who is no stanger to the dublin scene, stuey lyons,
+	                james cherry, stephen mahoney and snakebite_616.</p>
+	            <img src="images/heart.png" onclick="switchIcon(this)" id="heartIcon"></img>
+	            <a href="saolforsa.html" class="readMore">read more</a>
+	    </div>
+	    <!--end of release block-->
+        <div id="fakeContainer">
+        	<span class="before"><</span>
+        	<span class="one">1</span>
+        	<span class="two">2</span>
+        	<span class="next">></span>
+        </div>
+    </div>
+	<div id="footerHome">
+		<p id="footertext">made in november of 2022, ~rs</p>
+	</div>
+</body>
+</html>

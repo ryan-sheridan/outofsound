@@ -1,0 +1,360 @@
+body {
+     margin: 0;
+     color: #ffffff;
+     background-color: #4d4d4d;
+     font-family: 'Fira Code', monospace;
+     font-size: 89%;
+}
+ h1 {
+     text-align: center;
+     font-weight: 600;
+}
+ ul {
+     list-style-type: none;
+     margin: 0;
+     padding: 0;
+     overflow: hidden;
+     background-color: #333;
+     position: fixed;
+     width: 100%;
+}
+ li {
+     float: left;
+     text-align: center;
+}
+ li a {
+     display: block;
+     color: white;
+     padding: 9px 16px;
+     text-decoration: none;
+     border-bottom: 3px solid #333;
+     -webkit-box-shadow:0px 1px 1px #000000;
+     -moz-box-shadow:0px 1px 1px #000000;
+     box-shadow:0px 1px 1px #000000;
+}
+ ul {
+     box-shadow: 0px 3px 0px #3d3d3d;
+}
+ li a:hover:not(.active) {
+     background-color: #111;
+     border-bottom: 3px solid #eb7c15;
+     -webkit-transition: all 0.33s ease-in-out;
+     -moz-transition: all 0.33s ease-in-out;
+     -ms-transition: all 0.33s ease-in-out;
+     -o-transition: all 0.33s ease-in-out;
+     transition: all 0.33s ease-in-out;
+}
+ .active {
+     background-color: #04AA6D;
+}
+ .vl {
+     border-right: 10px solid #7d7d7d;
+     float: left;
+     height: 200px;
+}
+ .v2 {
+     border-right: 10px solid #7d7d7d;
+     float: right;
+     height: 200px;
+}
+ #mainPage {
+     margin: auto;
+     width: 65%;
+     height: 100%;
+     padding: 10px;
+}
+ #navbar {
+     background-color: red;
+     border-bottom: 43px solid #eb7c15;
+}
+ .releaseHeading, .releaseLabel {
+     font-family: 'Fira Code', monospace;
+     font-weight: 600;
+     background-color: #5f5f5f;
+     padding: 4px;
+     text-decoration: none;
+     color: #222;
+}
+ .releaseHeading:hover {
+     background-color: #c0c0c0;
+}
+ .releaseLabel:hover {
+     background-color: #c0c0c0;
+}
+ .releasePic {
+     height: 200px;
+     width: 200px;
+     background-color: #000000;
+     float: left;
+}
+ .readMore {
+     position:absolute;
+     bottom:0;
+     right:0;
+     padding: 4px;
+     background-color: #5f5f5f;
+     font-size: 15px;
+     text-decoration: none;
+     color: #222;
+}
+ .readMore:hover {
+     background-color: #c0c0c0;
+}
+ .favourite:hover {
+     background-color: #c0c0c0;
+}
+ #footer {
+     clear: both;
+     position: relative;
+     height: 100px;
+     margin-top: -50  px;
+     background-color: #333;
+}
+ #footertext {
+     color: #7d7d7d;
+     margin: auto;
+     text-align: center;
+     padding-top: 45px;
+}
+ #mainRelease {
+     font-weight: 300;
+     background-color: #5d5d5d;
+     padding-right: 35px;
+     padding-bottom: 35px;
+     padding-left: 35px;
+     text-decoration: none;
+     border-top: 3px solid #333;
+     border-bottom: 3px solid #eb7c15;
+     height: 80;
+}
+ .mainReleaseText {
+     background-color: #3d3d3d;
+     padding-top: 10px;
+     padding-right: 10px;
+     padding-bottom: 10px;
+     width: 100%;
+     height: 50%;
+     position: relative;
+     overflow: hidden;
+}
+ #trackHolder {
+     width: 50%;
+     float: right;
+     font-size: 11px;
+     text-align: right;
+     padding-top: 10px;
+}
+ #track {
+     background-color: grey;
+     padding-left: 4px;
+     padding-right: 4px;
+     padding-bottom: 4px;
+     border-bottom: 3px solid #eb7c15;
+}
+ .mainReleaseText iframe {
+     padding: 8px;
+     float: right;
+     margin: right;
+     bottom: 0;
+     text-align: right;
+}
+ #releaseText {
+     width: 100%;
+     float: right;
+     text-align: right;
+     padding: 10px;
+     border-bottom: 3px solid grey;
+     box-sizing: border-box;
+}
+ .splitContainer1 {
+     height: 94%;
+     width: 68%;
+     border-left: 3px solid grey;
+     margin-left: 30%;
+     position: absolute;
+     overflow: hidden;
+}
+ .splitContainer0 {
+     width: 30%;
+     height: 100%;
+     float: left;
+     overflow: hidden;
+}
+ #imgSquare {
+     padding:10px;
+}
+ #imgSquare img {
+     width: 100%;
+     height: 100%;
+     padding-bottom: 5px;
+}
+ #stats {
+     background-color: #2d2d2d;
+     width: 100%;
+     font-size: 11px;
+     box-sizing: border-box;
+     padding: 5px;
+}
+ #video {
+     width: 100%;
+     height: 100%;
+     position: relative;
+     opacity: 1;
+     margin-top: -8px;
+     margin-right: -8px;
+}
+ #videoContainer {
+     width: 270px;
+     height: 160px; 
+     background-color: #eb7c15;
+     text-align: center;
+     position: absolute;
+     right: 53%;
+}
+#comments {
+    font-weight: 700;
+    width: 100%;
+    height: 10%;
+    background-color: #3d3d3d;
+    color: whitesmoke;
+    text-align: center;
+    border: 1px solid #3d3d3d;
+    padding: 4px;
+}
+
+#comments:focus::placeholder {
+  color: transparent;
+}
+
+#comments:focus {
+  outline: none;
+  border-bottom: 3px solid #eb7c15;
+}
+
+#submit {
+  font-weight: 700;
+  background-color: #7d7d7d;
+  width: 100%;
+  padding: px;
+  color: #3d3d3d;
+  height: 35px;
+  border: 0;
+  pointer-events: none;
+  display: none;
+}
+
+.commentSection {
+  width: 98%;
+  height: 50px;
+  padding: 13px;
+  background-color: #3d3d3d;
+  display: none;
+  border-bottom: 1px solid black;
+}
+
+#commment {
+  font-weight: 700;
+  color: whitesmoke;
+}
+
+#user {
+  font-size: 9px;
+  color: #8d8d8d;
+}
+
+#date {
+  font-size: 9px;
+  color: #8d8d8d;
+}
+
+ #footerHome {
+     clear: both;
+     position: relative;
+     height: 100px;
+     margin-top: 25%;
+     background-color: #333;
+}
+
+button {
+  outline: red;
+}
+
+.one, .two, .before, .next  {
+  border: 1px solid #555555;
+  text-align: center;
+  border-radius: 20px;
+  padding-left: 15px;
+  padding-right: 15px;
+  padding-top: 10px;
+  padding-bottom: 10px;
+  background-color: #5f5f5f;
+  color: #222;
+  font-weight: 600;
+  box-shadow: 0px 2px 0px #212121;
+  position: relative;
+  top: 0;
+  transition: top ease 0.5s;
+}
+
+.one:hover, .two:hover, .before:hover, .next:hover  {
+  box-shadow: 0px 5px 0px #222222;
+  background-color: #c0c0c0;
+  top: -5px;
+}
+
+.one:focus, .two:focus, .before:focus, .next:focus  {
+  background-color: #c0c0c0;
+}
+
+#fakeContainer {
+  text-align: center;
+  background-color: #3d3d3d;
+}
+
+.releaseBlock {
+  top: -28px;
+  box-shadow: 0 3px 0 #333;
+  transition: top ease 0.5s;
+  background-color: #7d7d7d;
+  height: 200px;
+  padding: 4px;
+  border-top: 3px solid #333;
+  border-bottom: 3px solid #eb7c15;
+  color: #222;
+  padding-right: 10px;
+  position: relative; 
+}
+
+.releaseBlockContainer {
+  background-color: #333;
+  width: 100%;
+  height: 210px;
+}
+
+.heart {
+  width: 18px;
+  height: 18px;
+  position: relative;
+  bottom: -86%;
+  left: 50%;
+}
+
+#heartIcon {
+  width: 26px;
+  height: 26px;
+  bottom: 0;
+  right: 10%;
+  position: absolute;
+  box-sizing: border-box;
+  background-color: #5f5f5f;
+  padding: 4px;
+  color: #222;
+}
+
+
+
+
+
+
+
+
