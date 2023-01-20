@@ -1,0 +1,156 @@
+<!DOCTYPE HTML>
+<html>
+
+<head>
+    <title></title>
+    <script src="../script.js"></script>
+    <script src="../markers.js"></script>
+    <link rel="stylesheet" href="../style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Fira+Code:wght@300;600&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <meta name="viewport" content="width=device-width,height=device-height,initial-scale=1.0" />
+    <link rel = "stylesheet" href = "http://cdn.leafletjs.com/leaflet-0.7.3/leaflet.css" />
+    <script src = "http://cdn.leafletjs.com/leaflet-0.7.3/leaflet.js"></script>
+</head>
+<body onload='onbodyload()'>
+	<div id=navbar>
+        <ul>
+            <li><a href="../index.html">home</a></li>
+            <li><a href="where.html">where</a></li>
+            <li><a href="contact.html">contact</a></li>
+            <li><a href="about.html">about</a></li>
+        </ul>
+    </div>
+    <h1>
+        record shops in my area?
+	</h1>
+
+    <div id="mapContainer">
+        <div id="map"></div>
+        <script src="http://cdn.leafletjs.com/leaflet-0.7.3/leaflet.js"></script>
+        <script>
+            var mapOptions = {
+                center: [53.34465, -6.26371],
+                zoom: 6
+            }
+            
+            var map = new L.map('map', mapOptions);
+
+            var layer = new L.TileLayer('http://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png');
+
+            map.addLayer(layer);
+
+            let customIcon = {
+                iconUrl: "https://i.ibb.co/G731GC0/pin-1.png",
+                iconSize: [40,62] 
+            } 
+
+            let myIcon = L.icon(customIcon);
+
+            let iconOptions = {
+                icon:myIcon
+            }
+
+            for(var i=0;i<list.length;i++){
+                var cord = list[i];
+                var stringXY = String(cord);
+                var lat = stringXY.split(',')[0];
+                var lng = stringXY.split(',')[1];
+
+                let marker = new L.marker(list[i], iconOptions).addTo(map);
+            }
+        </script>
+        <div id="mapButtonContainer">
+            <h3>navigation</h3>
+            <button onclick="updateMap(53.34465, -6.26371)">All City Records</button><br><br>
+            <button onclick="updateMap(53.343068, -6.261004799999999)">Freebird Records</button><br><br>
+            <button onclick="updateMap(53.3420531, -6.2645558)">The Record Spot (Permanently Closed)</button><br><br>
+            <button onclick="updateMap(53.3499889, -6.2647379)">Head Dublin - Ilac Centre (Permanently Closed)</button><br><br>
+            <button onclick="updateMap(53.3430202, -6.259026)">Sound Cellar</button><br><br>
+            <button onclick="updateMap(52.79783, -6.1529639)">Beat That Records</button><br><br>
+            <button onclick="updateMap(53.3487083, -6.2601357)">Tower Records</button><br><br>
+            <button onclick="updateMap(53.3394804, -6.256305299999999)">Little Gem Records (Permanently Closed)</button><br><br>
+            <button onclick="updateMap(53.34465609999999, -6.2638811)">Into The Void Records (Permanently Closed)</button><br><br>
+            <button onclick="updateMap(53.34250189999999, -6.2639022)">Spindizzy Records</button><br><br>
+            <button onclick="updateMap(52.837751, -6.9311094)">Soultrader (Permanently Closed)</button><br><br>
+            <button onclick="updateMap(53.26902159999999, -9.0617349)">Bell, Book & Candle</button><br><br>
+            <button onclick="updateMap(54.271438, -8.4752096)">Liber</button><br><br>
+            <button onclick="updateMap(53.3422007, -6.2577479)">Tower Records</button><br><br>
+            <button onclick="updateMap(53.2865621, -6.2427607)">Golden Discs Dundrum</button><br><br>
+            <button onclick="updateMap(53.2728701, -9.0522473)">OMG @ Zhivago</button><br><br>
+            <button onclick="updateMap(51.8981277, -8.482567399999999)">Repall Skateshop</button><br><br>
+            <button onclick="updateMap(53.3297705, -6.2660828)">Redbox Records</button><br><br>
+            <button onclick="updateMap(52.65256979999999, -7.252606999999999)">Rollercoaster Records</button><br><br>
+            <button onclick="updateMap(53.340004, -6.2622729)">Golden Discs Stephen's Green</button><br><br>
+            <button onclick="updateMap(52.260049, -7.1104818)">Golden Discs</button><br><br>
+            <button onclick="updateMap(52.3385456, -6.461645)">Golden Discs</button><br><br>
+            <button onclick="updateMap(52.354816, -7.6914345)">Golden Discs</button><br><br>
+            <button onclick="updateMap(53.6535704, -6.6868741)">Golden Discs</button><br><br>
+            <button onclick="updateMap(53.2895782, -6.1301983)">Vinyl Dublin (Permanently Closed)</button><br><br>
+            <button onclick="updateMap(52.2615424, -7.1127783)">Soul Dance Records (Permanently Closed)</button><br><br>
+            <button onclick="updateMap(51.8970738, -8.4829448)">Records & Relics</button><br><br>
+            <button onclick="updateMap(54.0031147, -6.4032792)">Classified Records</button><br><br>
+            <button onclick="updateMap(52.6520263, -7.2529665)">HMV (Permanently Closed)</button><br><br>
+            <button onclick="updateMap(52.66077259999999, -8.6352528)">Steamboat Records</button><br><br>
+            <button onclick="updateMap(53.345071, -6.264078599999999)">Claddagh Records</button><br><br>
+            <button onclick="updateMap(52.2586054, -7.111979499999999)">Rainbow Records</button><br><br>
+            <button onclick="updateMap(52.3366529, -6.460883399999999)">South East Records (Permanently Closed)</button><br><br>
+            <button onclick="updateMap(53.9917312, -7.359947300000001)">Multisound Record Shop</button><br><br>
+            <button onclick="updateMap(52.8433528, -8.9826751)">Custy's Traditional Music Shop</button><br><br>
+            <button onclick="updateMap(51.90106669999999, -8.471442699999999)">Bunker Vinyl & Studio</button><br><br>
+            <button onclick="updateMap(53.8548333, -9.299916099999999)">Downtown Records Castlebar</button><br><br>
+            <button onclick="updateMap(53.3300937, -6.3427048)">Head Dublin - Liffey Valley (Permanently Closed)</button><br><br>
+            <button onclick="updateMap(53.01644750000001, -9.3741349)">The Traditional Music Shop</button><br><br>
+            <button onclick="updateMap(52.08942889999999, -7.623864599999998)">Ben O'Neill Music Shop</button><br><br>
+            <button onclick="updateMap(53.2755145, -7.492007199999999)">Discovery</button><br><br>
+            <button onclick="updateMap(51.9011774, -8.471443299999999)">Bunker vinyl</button><br><br>
+            <button onclick="updateMap(51.8976, -8.475999999999999)">Plugd</button><br><br>
+            <button onclick="updateMap(53.3457392, -6.262805399999934)">Mojo's Records (Permanently Closed)</button><br><br>
+            <button onclick="updateMap(53.0317226, -7.296560799999999)">Trax</button><br><br>
+            <button onclick="updateMap(53.4879554, -10.0192191)">The Bens Music and Picture Framing</button><br><br>
+            <button onclick="updateMap(51.8982934, -8.4738635)">The Vinyl Lounge @ Golden Discs</button><br><br>
+            <button onclick="updateMap(52.08942889999999, -7.623864599999998)">Ben O'Neill Music Shop</button><br><br>
+            <button onclick="updateMap(53.3394528, -6.2735325)">Blind Dog Vinyl @ Anon</button><br><br>
+            <button onclick="updateMap(53.33685759999999, -6.2752024)">Optic Music</button><br><br>
+            <button onclick="updateMap(52.14099119999999, -10.2711059)">Dingle Record Shop</button><br><br>
+            <button onclick="updateMap(51.8763921, -8.4960215)">Music Zone</button><br><br>
+            <button onclick="updateMap(52.84270189999999, -8.9830121)">Record Rack</button><br><br>
+            <button onclick="updateMap(52.6756036, -6.29732)">HarleQuinn Records</button><br><br>
+            <button onclick="updateMap(53.2738504, -9.0506469)">Head Galway - Corbett Court (Permanently Closed)</button><br><br>
+            <button onclick="updateMap(53.3445706, -6.2636511)">fwCity Records</button><br><br>
+            <button onclick="updateMap(53.3417797, -6.2785775)">Blackwax Records</button><br><br>
+            <button onclick="updateMap(52.6636854, -8.6252161)">Golden Discs</button><br><br>
+            <button onclick="updateMap(53.3013882, -6.1776449)">Superhero Records</button><br><br>
+            <button onclick="updateMap(52.8441285, -8.9840164)">Record Rack</button><br><br>
+            <button onclick="updateMap(52.25788009999999, -7.1118875)">Dive Records </button><br><br>
+            <button onclick="updateMap(53.34470109999999, -6.263451600000053)">In Dub Reggae Store</button><br><br>
+            <button onclick="updateMap(53.3456321, -6.261167299999999)">Absys Records Center Hub</button><br><br>
+            <button onclick="updateMap(53.2921591, -6.1350918)">Golden Discs Dún Laoghaire</button><br><br>
+            <button onclick="updateMap(51.8804211, -8.507489399999999)">Golden Discs Wilton SC</button><br><br>
+            <button onclick="updateMap(53.3482143, -6.2656231)">Golden Discs Jervis SC</button><br><br>
+            <button onclick="updateMap(54.2708745, -8.4752796)">Golden Discs</button><br><br>
+            <button onclick="updateMap(52.2682697, -9.7065709)">Golden Discs</button><br><br>
+            <button onclick="updateMap(53.3527782, -6.391547099999999)">Golden Discs Liffey Valley</button><br><br>
+            <button onclick="updateMap(51.9013047, -8.466125)">Vinylone - Cork</button><br><br>
+            <button onclick="updateMap(52.6621728, -8.6262823)">Lucky Lane</button><br><br>
+            <button onclick="updateMap(51.9011901, -8.466119899999999)">Vinyl0ne - Cork</button><br><br>
+            <button onclick="updateMap(51.9011917, -8.4662039)">Vinyl Records Cork</button><br><br>
+            <button onclick="updateMap(51.9011545, -8.466346699999999)">Record shop Cork</button><br><br>
+            <button onclick="updateMap(51.9012441, -8.4656472)">Cd's vinyl records, tapes in Cork</button><br><br>
+            <button onclick="updateMap(51.9013204, -8.466350199999999)">Record store cd and tapes in cork city</button><br><br>
+            <button onclick="updateMap(51.9012031, -8.4667239)">The vinyl records shops quarter in Cork</button><br><br>
+            <button onclick="updateMap(53.3690531, -6.2556647)">Wavetable</button><br><br>
+            <button onclick="updateMap(53.344891, -6.2638908)">The RAGE / The Record Spot</button><br><br>
+            <button onclick="updateMap(53.5244812, -7.341131099999999)">33/45 Records</button><br><br>
+            <button onclick="updateMap(54.4767249, -8.2741645)">The Very Back</button><br><br>
+            <button onclick="updateMap(53.3450411, -6.2626443)">Sentinel Records</button>
+        </div>
+    </div>
+
+	<div style="margin-top:100%" id="footerHome">
+		<p id="footertext">made in november of 2022, ~rs</p>
+	</div>
+</body>
+</html>

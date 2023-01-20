@@ -1,0 +1,67 @@
+<!DOCTYPE HTML>
+<html>
+
+<head>
+    <title></title>
+    <script src="../script.js"></script>
+    <link rel="stylesheet" href="../style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Fira+Code:wght@300;600&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <meta name="viewport" content="width=device-width,height=device-height,initial-scale=1.0" />
+</head>
+
+<body onload='onbodyload()'>
+    <div id=navbar>
+        <ul>
+            <li><a href="../index.html">home</a></li>
+            <li><a href="where.html">where</a></li>
+            <li><a href="contact.html">contact</a></li>
+            <li><a href="about.html">about</a></li>
+        </ul>
+    </div>
+    <br>
+    <div id="mainPage">
+        <div id="mainRelease" onload='mainreleaseonload()'>
+            <h1>DJ Chich – X-010110</h1>
+            <div class="mainReleaseText">
+                <div class="splitContainer0">
+                    <div id="imgSquare">
+                        <img src="https://i.discogs.com/F01qMo3UX9uNZprCNTcoaV82qLTs8puMnLO8JUxYY6I/rs:fit/g:sm/q:90/h:240/w:240/czM6Ly9kaXNjb2dz/LWRhdGFiYXNlLWlt/YWdlcy9SLTIxNjk1/OTgzLTE2NDE5MjEx/NjktMTcwNy5qcGVn.jpeg">
+                        <div id="stats">
+                            Released: Jan 11, 2022<br> Country: Netherlands<br> Genre: Electronic<br> Style: Techno<br>
+                        </div>
+                        </img>
+                    </div>
+                </div>
+                <div class="splitContainer1">
+                    <div id="releaseText">
+                    	with remixes from the man who created the famous mord label, bas mooy, and the 2 brothers who are taking over techno right now, temudo and norbak hayes, both from portugal, this is golden.
+                    </div><br>
+                    <div id="trackHolder">
+						<span id="videoContainer">
+							<iframe id="video" src="https://www.youtube.com/embed/63YxnPri_jM" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+						</span>
+                        <span class="tracks">
+							<span id="track">A1: X-010110</span><br><br>
+	                        <span id="track">A2: X-010110 (Bas Mooy Remix)</span><br><br>
+	                        <span id="track">B1: X-010110 (Temudo Remix)</span><br><br>
+	                        <span id="track">B2: X-010110 (Nørbak Remix)</span>
+                        </span>
+                    </div>
+                </div>
+            </div>
+            <p width="100%" id="specialTag"></p>
+            <input placeholder="what do you think of this?" maxlength="100" id="comments"></input>
+            <br><br>
+            <input id="submit" type="submit" value="submit comment">
+            <br>
+	            <div id="commentSectionContainer"></div>
+        </div>
+    </div>
+	<div id="footerHome">
+		<p id="footertext">made in november of 2022, ~rs</p>
+	</div>
+</body>
+</html>

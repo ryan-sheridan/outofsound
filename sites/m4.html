@@ -1,0 +1,65 @@
+<!DOCTYPE HTML>
+<html>
+
+<head>
+    <title></title>
+    <script src="../script.js"></script>
+    <link rel="stylesheet" href="../style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Fira+Code:wght@300;600&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <meta name="viewport" content="width=device-width,height=device-height,initial-scale=1.0" />
+</head>
+
+<body onload='onbodyload()'>
+    <div id=navbar>
+        <ul>
+            <li><a href="../index.html">home</a></li>
+            <li><a href="where.html">where</a></li>
+            <li><a href="contact.html">contact</a></li>
+            <li><a href="about.html">about</a></li>
+        </ul>
+    </div>
+    <br>
+    <div id="mainPage">
+        <div id="mainRelease" onload='mainreleaseonload()'>
+            <h1>Maurizio – M4</h1>
+            <div class="mainReleaseText">
+                <div class="splitContainer0">
+                    <div id="imgSquare">
+                        <img src="https://i.discogs.com/f_pGkC6XJ8lDpAFfQLn9rCTsm-3A2iDvB5D7Zyrnh0s/rs:fit/g:sm/q:90/h:600/w:599/czM6Ly9kaXNjb2dz/LWRhdGFiYXNlLWlt/YWdlcy9SLTg3NTM4/OTAtMTU0MTI2ODcy/NS01MzIxLmpwZWc.jpeg">
+                        <div id="stats">
+                            Released: 1995<br> Genre: Electronic<br> Style: Techno, Dub Techno, Minimal<br>
+                        </div>
+                        </img>
+                    </div>
+                </div>
+                <div class="splitContainer1">
+                    <div id="releaseText">
+                    	from the works of the famous basic channel duo. this record is timeless and is an essential dub / minimal techno piece.
+                    </div><br>
+                    <div id="trackHolder">
+						<span id="videoContainer">
+                            <iframe id="video" src="https://www.youtube.com/embed/0ztzEuNzeHA" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+                        </span>
+                        <span class="tracks">
+							<span id="track">A1: Untitled</span><br><br>
+	                        <span id="track">A2: Untitled</span>
+                        </span>
+                    </div>
+                </div>
+            </div>
+            <p width="100%" id="specialTag"></p>
+            <input placeholder="what do you think of this?" maxlength="100" id="comments"></input>
+            <br><br>
+            <input id="submit" type="submit" value="submit comment">
+            <br>
+	            <div id="commentSectionContainer"></div>
+        </div>
+    </div>
+	<div id="footerHome">
+		<p id="footertext">made in november of 2022, ~rs</p>
+	</div>
+</body>
+</html>

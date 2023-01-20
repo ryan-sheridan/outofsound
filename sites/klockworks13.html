@@ -1,0 +1,66 @@
+<!DOCTYPE HTML>
+<html>
+
+<head>
+    <title></title>
+    <script src="../script.js"></script>
+    <link rel="stylesheet" href="../style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Fira+Code:wght@300;600&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <meta name="viewport" content="width=device-width,height=device-height,initial-scale=1.0" />
+</head>
+
+<body onload='onbodyload()'>
+    <div id=navbar>
+        <ul>
+            <li><a href="../index.html">home</a></li>
+            <li><a href="where.html">where</a></li>
+            <li><a href="contact.html">contact</a></li>
+            <li><a href="about.html">about</a></li>
+        </ul>
+    </div>
+    <br>
+    <div id="mainPage">
+        <div id="mainRelease" onload='mainreleaseonload()'>
+            <h1>DVS1 – Klockworks 13</h1>
+            <div class="mainReleaseText">
+                <div class="splitContainer0">
+                    <div id="imgSquare">
+                        <img src="https://i.discogs.com/OaEPRlZ_B7I22qjZ6D2u2F4dkoi3n4ii1F1rdwj65fE/rs:fit/g:sm/q:90/h:600/w:600/czM6Ly9kaXNjb2dz/LWRhdGFiYXNlLWlt/YWdlcy9SLTU4ODk3/MDktMTQwOTQ4ODM2/OS05MzA5LmpwZWc.jpeg">
+                        <div id="stats">
+                            Released: July 2014<br> Country: Germany<br> Genre: Electronic<br> Style: Techno<br>
+                        </div>
+                        </img>
+                    </div>
+                </div>
+                <div class="splitContainer1">
+                    <div id="releaseText">
+                    	with a thorough education and background in techno dvs1 has ofcourse made it on to this list. hypnotic side of stuff that I love this record will always be spun.
+                    </div><br>
+                    <div id="trackHolder">
+						<span id="videoContainer">
+							<iframe id="video" src="https://www.youtube.com/embed/xXXDM61jCVk" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+						</span>
+                        <span class="tracks">
+							<span id="track">A1: Black Russian</span><br><br>
+	                        <span id="track">B1: Creeping</span><br><br>
+	                        <span id="track">B2: Spying</span>
+                        </span>
+                    </div>
+                </div>
+            </div>
+            <p width="100%" id="specialTag"></p>
+            <input placeholder="what do you think of this?" maxlength="100" id="comments"></input>
+            <br><br>
+            <input id="submit" type="submit" value="submit comment">
+            <br>
+	            <div id="commentSectionContainer"></div>
+        </div>
+    </div>
+	<div id="footerHome">
+		<p id="footertext">made in november of 2022, ~rs</p>
+	</div>
+</body>
+</html>
